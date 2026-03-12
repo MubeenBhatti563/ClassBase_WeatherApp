@@ -1,0 +1,80 @@
+.app {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 90vw;
+  max-width: 800px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.inputVal {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-search {
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff6982;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-search:hover {
+  transform: scale(1.05);
+  background-color: #ff4f6d;
+}
+
+.weather-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.day {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day span {
+  font-size: 2.5rem;
+}
+
+.day p {
+  font-size: 1.1rem;
+}
+
+.loader,
+.error-msg {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #666;
+}
